@@ -13,6 +13,7 @@ Azure NSG Enforcement
 Azure Network Watcher Validation
 
 ## Architecture
+![VNet Peering](assets/architecture.png.png)
 
 
     
