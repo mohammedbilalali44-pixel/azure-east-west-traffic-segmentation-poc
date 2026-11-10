@@ -13,29 +13,8 @@ Azure NSG Enforcement
 Azure Network Watcher Validation
 
 ## Architecture
-flowchart LR
+<img width="1139" height="2268" alt="image" src="https://github.com/user-attachments/assets/33dc5608-c14f-449a-8dad-b0a8444dfad5" />
 
-    subgraph Management_VNet["Management Network"]
-        AVM["attacker-vm"]
-    end
-
-    subgraph Production_VNet["Production Network"]
-        TVM["target-vm"]
-        Portal["Internal Business Portal"]
-        Data["Sample Payroll Data"]
-    end
-
-    AVM <-->|VNet Peering| TVM
-
-    TVM --> Portal
-    TVM --> Data
-
-    NSG["Network Security Group"]
-
-    TVM --> NSG
-
-    NSG -->|"Allow TCP 80"| HTTP["HTTP Access"]
-    NSG -->|"Deny TCP 22"| SSH["SSH Access"]
     
 Phase 1 - VNet Peering
 ![VNet Peering](assets/vnet-peering.png.png)
