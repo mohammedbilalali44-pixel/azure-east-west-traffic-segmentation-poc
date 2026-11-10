@@ -44,7 +44,7 @@ Performed host discovery and service enumeration using Nmap.
 Captured east-west traffic between peered environments using tcpdump.
 
 ## Phase 6 - Lateral Movement Validation
-![SSH Reachability](assets/Screenshot SSH to Target VM.png)
+![SSH Reachability](assets/ssh-allowed.png.png)
 
 Validated SSH reachability before security controls were implemented.
 
