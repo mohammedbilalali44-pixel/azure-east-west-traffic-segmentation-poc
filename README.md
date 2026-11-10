@@ -13,7 +13,7 @@ Azure NSG Enforcement
 Azure Network Watcher Validation
 
 ## Architecture
-<img width="1139" height="2268" alt="image" src="https://github.com/user-attachments/assets/33dc5608-c14f-449a-8dad-b0a8444dfad5" />
+
 
     
 Phase 1 - VNet Peering
