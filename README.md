@@ -11,31 +11,35 @@ Lateral Movement
 Network Segmentation
 Azure NSG Enforcement
 Azure Network Watcher Validation
+
 ## Architecture
++---------------------------+
+| Management Network        |
+|                           |
+|       attacker-vm         |
++-------------+-------------+
+              |
+              |
+              | Azure VNet Peering
+              |
+              v
++---------------------------+
+| Production Network        |
+|                           |
+|        target-vm          |
+|                           |
+| Internal Business Portal  |
+| Sample Payroll Data       |
++-------------+-------------+
+              |
+              |
+              v
++---------------------------+
+| Network Security Group    |
++---------------------------+
 
-┌─────────────────────┐
-│  Management Network │
-│     attacker-vm     │
-└──────────┬──────────┘
-           │
-           │ VNet Peering
-           │
-┌──────────▼──────────┐
-│  Production Network │
-│      target-vm      │
-│                     │
-│ Internal Business   │
-│ Portal              │
-│ Sample Payroll Data │
-└──────────┬──────────┘
-           │
-           ▼
-┌─────────────────────┐
-│        NSG          │
-└─────────────────────┘
-
-SSH (22)   -> BLOCKED
-HTTP (80)  -> ALLOWED
+SSH (22)  -> BLOCKED
+HTTP (80) -> ALLOWED
 
 Phase 1 - VNet Peering
 ![VNet Peering](assets/vnet-peering.png.png)
