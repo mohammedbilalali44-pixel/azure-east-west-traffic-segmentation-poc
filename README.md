@@ -21,8 +21,10 @@ Production Network (Target VM)
             ├── Internal Business Portal
             ├── Sample Payroll Data
             └── NSG Protection
+            
 Phase 1 - VNet Peering
-assets/vnet-peering.png.png
+![Alt Text](assets/vnet-peering.png)
+
 
 Established connectivity between isolated Azure virtual networks.
 
