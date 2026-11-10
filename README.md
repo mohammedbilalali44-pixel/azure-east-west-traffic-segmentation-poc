@@ -37,7 +37,6 @@ Azure Network Watcher Validation
 +---------------------------+
 | Network Security Group    |
 +---------------------------+
-
 SSH (22)  -> BLOCKED
 HTTP (80) -> ALLOWED
 
