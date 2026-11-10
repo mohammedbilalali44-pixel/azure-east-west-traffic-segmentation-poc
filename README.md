@@ -13,7 +13,7 @@ Azure NSG Enforcement
 Azure Network Watcher Validation
 
 ## Architecture
-![Architecture](assets/Architecture.png)
+![Architecture](assets/Architecture.png.png)
 
 
     
